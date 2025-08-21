@@ -102,6 +102,11 @@ The application is containerized and ready for deployment:
 - Modify environment variables for production
 - Ensure proper secrets management
 
+## 🎥 Demo Video
+
+A complete video demonstration is attached showing the Smart Helpdesk system in action.
+▶ [Watch Demo Video](https://drive.google.com/file/d/11w9ZdpxFtMAv52QnUm4Weo9eRIeg1Srg/view?usp=sharing)
+
 ## 🤝 Contributing
 
 1. Fork the repository
