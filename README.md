@@ -32,7 +32,8 @@ An AI-powered helpdesk system built with MERN stack (MongoDB, Express, React, No
 ## 🚀 Getting Started
 
 ### 1. Clone & Setup
-git clone <your-repo-url>
+git clone https://github.com/janhvi2806/smart-helpdesk.git
+
 cd smart-helpdesk
 
 ### 2. Environment Configuration
@@ -40,20 +41,20 @@ Create a `.env` file in the root directory:
 cp .env.example .env
 
 ### 3. Install Dependencies
-Root dependencies
-npm install
+#### Root dependencies
+-> npm install
 
-Backend dependencies
-cd backend && npm install
+#### Backend dependencies
+-> cd backend && npm install
 
-Frontend dependencies
-cd ../frontend && npm install
+#### Frontend dependencies
+-> cd ../frontend && npm install
 
-Python dependencies
-cd ../agent-worker
-python -m venv venv
-source venv/bin/activate # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+#### Python dependencies
+-> cd ../agent-worker
+-> python -m venv venv
+-> source venv\Scripts\activate
+-> pip install -r requirements.txt
 
 
 ### 4. Start Services
@@ -62,17 +63,17 @@ pip install -r requirements.txt
 docker-compose up --build
 
 **Option B: Local Development**
-Terminal 1: Start MongoDB and Redis
+#### Terminal 1: Start MongoDB and Redis
 (or use Docker for just databases)
-Terminal 2: Backend
-cd backend && npm run dev
-Terminal 3: Agent Worker
-cd agent-worker && uvicorn app.main:app --reload --port 8000
-Terminal 4: Frontend
-cd frontend && npm run dev
+#### Terminal 2: Backend
+-> cd backend && npm run dev
+#### Terminal 3: Agent Worker
+-> cd agent-worker && uvicorn app.main:app --reload --port 8000
+#### Terminal 4: Frontend
+-> cd frontend && npm run dev
 
 ### 5. Seed Database
-node scripts/seed.js
+-> node scripts/seed.js
 
 ### 6. Access Application
 - **Frontend**: http://localhost:3000
