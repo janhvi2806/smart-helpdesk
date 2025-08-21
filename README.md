@@ -34,11 +34,8 @@ An AI-powered helpdesk system built with MERN stack (MongoDB, Express, React, No
 ### 1. Clone & Setup
 git clone https://github.com/janhvi2806/smart-helpdesk.git
 
-cd smart-helpdesk
-
 ### 2. Environment Configuration
-Create a `.env` file in the root directory:
-cp .env.example .env
+Create a `.env` file in the root directory: cp .env.example .env
 
 ### 3. Install Dependencies
 #### Root dependencies
@@ -60,7 +57,7 @@ cp .env.example .env
 ### 4. Start Services
 
 **Option A: Docker**
-docker-compose up --build
+-> docker-compose up --build
 
 **Option B: Local Development**
 #### Terminal 1: Start MongoDB and Redis
