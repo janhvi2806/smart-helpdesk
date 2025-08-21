@@ -1,0 +1,30 @@
+{
+  "name": "smart-helpdesk",
+  "version": "1.0.0",
+  "description": "Smart helpdesk with agentic triage",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:agent\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:agent": "cd agent-worker && uvicorn app.main:app --reload --host 0.0.0.0 --port 8000",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "seed": "node scripts/seed.js",
+    "logs": "docker-compose logs -f",
+    "clean": "docker-compose down -v && docker system prune -f"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "helpdesk",
+    "ai",
+    "triage",
+    "support"
+  ],
+  "license": "MIT"
+}
